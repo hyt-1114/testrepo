@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ポートフォリオ</title>
-    <link rel="stylesheet" href="start.folder/style.css">
+    <link rel="stylesheet" href="start.folder/css/style.css">
 </head>
 <body>
     <header>
@@ -13,13 +13,14 @@
             <ul class="nav-list">
                 <li><a href="index.html">ホーム</a></li>
                 <li><a href="start.folder/contact.html">お問い合わせ</a></li>
+                <li><a href="start.folder/work.html">課題</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="profile">
             <h2>自己紹介</h2>
-            <img src="start.folder/profile.png" alt="プロフィール写真" class="profile-img">
+            <img src="start.folder/img/profile.png" alt="プロフィール写真" class="profile-img">
             <p>こんにちは!!私はWeb開発を学んでいるエンジニア志望者です。</p>
         </section>
         <section class="skills">
@@ -34,67 +35,17 @@
             <h2>ポートフォリオ</h2>
             <p>これまでに作成した作品の一部を紹介します。</p>
             <div class="portfolio-items">
-                <img src="start.folder/work1.png" alt="作品1">
-                <img src="start.folder/work2.png" alt="作品2">
-                <img src="start.folder/work3.png" alt="作品3">
+                <img src="start.folder/img/profile.png" alt="作品1">
+                <img src="start.folder/img/work2.png" alt="作品2">
+                <img src="start.folder/img/work3.png" alt="作品3">
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 私のポートフォリオ</p>
     </footer>
+
+
 </body>
 </html>
 
-<!-- contact.html -->
-<!DOCTYPE html>
-<html lang="ja">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>お問い合わせ</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <header>
-            <h1>お問い合わせ</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li><a href="index.html">ホーム</a></li>
-                    <li><a href="contact.html">お問い合わせ</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="contact-form">
-                <h2>お問い合わせフォーム</h2>
-                <form action="#" method="POST">
-                    <label for="name">名前:</label>
-                    <input type="text" id="name" name="name" required><br>
-
-                    <label for="email">メールアドレス:</label>
-                    <input type="email" id="email" name="email" required><br>
-
-                    <label for="purpose">目的：</label>
-                    <select name="choice" id="choice">
-                        <option value="not_choice">未選択</option>
-                        <option value="recruitment">リクルート</option>
-                        <option value="question">質問</option>
-                        <option value="job_request">仕事依頼</option>
-                    </select><br><br>
-
-                    <label for="message">メッセージ:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <button type="submit">送信</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <p>&copy; 2025 私のポートフォリオ</p>
-        </footer>
-    </body>
-
-</html>
