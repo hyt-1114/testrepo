@@ -1,7 +1,7 @@
 const val1input = document.getElementById("value1");
 const val2input = document.getElementById("value2");
 const operatorselect = document.getElementById("choice");
-const formularea = document.getElementById("formul");
+const formulaarea = document.getElementById("formula");
 const resultarea = document.getElementById("result");
 
 val1input.addEventListener("input", calculate);
@@ -14,7 +14,7 @@ function calculate(){
     const operator = operatorselect.value;
 
     if(isNaN(val1) || isNaN(val2)){
-        formularea.textContent = "計算式";
+        formulaarea.textContent = "計算式：";
         resultarea.textContent = "両方の数値を入力してください。";
         return;
     }
@@ -26,25 +26,25 @@ function calculate(){
         result = val1 + val2;
         symbol = "+";
     }else if(operator === "subtraction"){
-        result = val1 -val2;
+        result = val1 - val2;
         symbol = "-";
     }else if(operator === "multiplication"){
-        result= val * val2;
+        result= val1 * val2;
         symbol ="*";
-    }else if(operator === "dicision"){
+    }else if(operator === "division"){
         if(val2 === 0){
-            formularea.textContent = "計算式";
+            formulaarea.textContent = "計算式：";
             resultarea.textContent = "0で割ることはできません。";
             return;
         }
         result = val1 / val2;
         symbol = "÷";
     }else{
-        formularea.textContent = "計算式";
+        formulaarea.textContent = "計算式：";
         resultarea.textContent = "演算子が正しくありません。"
         return;
     }
 
-    formularea.textContent = `計算式：${val1} ${symbol} ${val2}`;
+    formulaarea.textContent = `計算式：${val1} ${symbol} ${val2}`;
     resultarea.textContent = `計算結果：${result}`;
 }
